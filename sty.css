@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.container{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.orbit{
+    height: 100px;
+    width: 100px;
+    /* background-color: green;   */
+    position: relative; 
+    right: 30px;
+    bottom: 30px;
+}
+
+.sun{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+
+.Marcury{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgb(66, 45, 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: mar;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.orbital{
+    height: 300px;
+    width: 300px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    right: -67px;
+    bottom: -65px;
+  
+}
+
+@keyframes mar {
+    from{
+        transform: rotate(0deg) translate(150px);
+    }
+
+    to{
+        transform: rotate(360deg) translate(150px);
+    }
+    
+}
+.mars{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: rgb(192, 5, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: mars;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.maror{
+    height: 520px;
+    width: 520px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    right: -180px;
+    bottom: -180px;
+  
+}
+
+@keyframes mars {
+    from{
+        transform: rotate(0deg) translate(260px);
+    }
+
+    to{
+        transform: rotate(360deg) translate(260px);
+    }
+    
+}
+
+
+
+.earth{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: ear;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.Earthorbit{
+    height: 400px;
+    width: 400px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    right: -125px;
+    bottom: -125px;
+}
+
+@keyframes ear {
+    from{
+        transform: rotate(0deg) translate(200px);
+    }
+
+    to{
+        transform: rotate(360deg) translate(200px);
+    }
+    
+}
+
+.jupiter{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: jup;
+    animation-duration: 8s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.jupor{
+    height: 700px;
+    width: 700px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    right: -280px;
+    bottom: -280px;
+}
+
+@keyframes jup {
+    from{
+        transform: rotate(0deg) translate(350px) rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg) translate(350px) rotate(-360deg);
+    }
+    
+}
+.Saturn{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: rgb(155, 115, 115);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: sar;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.Saturnor{
+    height: 840px;
+    width: 840px;
+    border: 1px dashed white;
+    border-radius: 50%;
+    position: absolute;
+    right: -350px;
+    bottom: -350px;
+}
+
+@keyframes sar {
+    from{
+        transform: rotate(0deg) translate(420px) rotate(0deg);
+    }
+
+    to{
+        transform: rotate(360deg) translate(420px) rotate(-360deg);
+    }
+    
+}
